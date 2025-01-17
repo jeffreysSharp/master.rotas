@@ -4,8 +4,8 @@ namespace Master.Rotas.Business.Interfaces
 {
     public interface IRotaService : IDisposable
     {
-        Task Adicionar(Rota rota);
-        Task Atualizar(Rota rota);
-        Task Remover(Guid id);
+        Task<bool> Adicionar(Rota rota);
+        Task<bool> Atualizar(Rota rota);
+        Task<bool> Remover(Guid id);
     }
 }
