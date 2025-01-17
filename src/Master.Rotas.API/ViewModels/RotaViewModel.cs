@@ -8,11 +8,11 @@ namespace Master.Rotas.API.ViewModels
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        [StringLength(3, ErrorMessage = "O campo {0} precisa ter entre {3} e {1} caracteres", MinimumLength = 100)]
+        [StringLength(100, ErrorMessage = "O campo {0} precisa ter entre {3} e {1} caracteres", MinimumLength = 3)]
         public string Origem { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        [StringLength(3, ErrorMessage = "O campo {0} precisa ter entre {3} e {1} caracteres", MinimumLength = 100)]
+        [StringLength(100, ErrorMessage = "O campo {0} precisa ter entre {3} e {1} caracteres", MinimumLength = 3)]
         public string Destino { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
