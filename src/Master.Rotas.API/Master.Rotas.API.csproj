@@ -18,4 +18,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Master.Rotas.Business\Master.Rotas.Business.csproj" />
+    <ProjectReference Include="..\Master.Rotas.Data\Master.Rotas.Data.csproj" />
+  </ItemGroup>
+
 </Project>
