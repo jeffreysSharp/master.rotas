@@ -1,4 +1,4 @@
-using Master.Rotas.API.Configuration;
+// using Master.Rotas.API.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -11,14 +11,14 @@ configuration
         .AddEnvironmentVariables()
         .AddUserSecrets(typeof(Program).Assembly).Build();
 
-builder.Services.AddApiConfiguration(configuration);
+// builder.Services.AddApiConfiguration(configuration);
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerConfiguration();
+// builder.Services.AddSwaggerConfiguration();
 
 var app = builder.Build();
 var environment = app.Environment;
 
-app.UseSwaggerConfiguration();
-app.UseApiConfiguration(environment);
+// app.UseSwaggerConfiguration();
+// app.UseApiConfiguration(environment);
 
 app.Run();
