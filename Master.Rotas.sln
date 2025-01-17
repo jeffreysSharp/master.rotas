@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.Business", "src\Master.Rotas.Business\Master.Rotas.Business.csproj", "{41E48F54-6BB9-4C7F-84D7-FCD1DF596AA6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.Data", "src\Master.Rotas.Data\Master.Rotas.Data.csproj", "{4991BE9F-932F-47B9-87B1-4A2CCC0DC7F3}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.API", "src\Master.Rotas.API\Master.Rotas.API.csproj", "{014645D8-B89D-400A-BBCA-701D5746DCFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.Business", "src\Master.Rotas.Business\Master.Rotas.Business.csproj", "{810F8084-5F3F-4FFC-B7C8-E4E74DBBE3D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.Data", "src\Master.Rotas.Data\Master.Rotas.Data.csproj", "{B4587299-E641-4DC2-8638-F15953BE0AF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{41E48F54-6BB9-4C7F-84D7-FCD1DF596AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41E48F54-6BB9-4C7F-84D7-FCD1DF596AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41E48F54-6BB9-4C7F-84D7-FCD1DF596AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41E48F54-6BB9-4C7F-84D7-FCD1DF596AA6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4991BE9F-932F-47B9-87B1-4A2CCC0DC7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4991BE9F-932F-47B9-87B1-4A2CCC0DC7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4991BE9F-932F-47B9-87B1-4A2CCC0DC7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4991BE9F-932F-47B9-87B1-4A2CCC0DC7F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{014645D8-B89D-400A-BBCA-701D5746DCFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{014645D8-B89D-400A-BBCA-701D5746DCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{014645D8-B89D-400A-BBCA-701D5746DCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{014645D8-B89D-400A-BBCA-701D5746DCFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810F8084-5F3F-4FFC-B7C8-E4E74DBBE3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810F8084-5F3F-4FFC-B7C8-E4E74DBBE3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810F8084-5F3F-4FFC-B7C8-E4E74DBBE3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810F8084-5F3F-4FFC-B7C8-E4E74DBBE3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4587299-E641-4DC2-8638-F15953BE0AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4587299-E641-4DC2-8638-F15953BE0AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4587299-E641-4DC2-8638-F15953BE0AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4587299-E641-4DC2-8638-F15953BE0AF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
