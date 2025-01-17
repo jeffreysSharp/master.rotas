@@ -3,10 +3,12 @@ using Master.Rotas.API.ViewModels;
 using Master.Rotas.Business.Intefaces;
 using Master.Rotas.Business.Interfaces;
 using Master.Rotas.Business.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Master.Rotas.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     public class RotasController : MainController
     {
@@ -24,6 +26,7 @@ namespace Master.Rotas.API.Controllers
             _mapper = mapper;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IEnumerable<RotaViewModel>> ObterTodos()
         {

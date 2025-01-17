@@ -37,6 +37,10 @@ namespace Master.Rotas.Configuration
 
             app.UseRouting();
 
+            app.UseAuthentication();
+
+            app.UseAuthorization();
+
             app.UseCors("Total");
 
             app.UseEndpoints(endpoints =>

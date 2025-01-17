@@ -14,7 +14,7 @@ configuration
 
 
 builder.Services.AddApiConfiguration(configuration);
-
+builder.Services.AddIdentityConfiguration(configuration);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddEndpointsApiExplorer();
@@ -27,6 +27,7 @@ var environment = app.Environment;
 
 app.UseApiConfiguration(app.Environment);
 app.UseSwaggerConfiguration();
+
 
 
 app.Run();
