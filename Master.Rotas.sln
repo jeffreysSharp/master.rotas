@@ -5,9 +5,9 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.API", "src\Master.Rotas.API\Master.Rotas.API.csproj", "{22AADD1B-A339-402C-8088-9B3C0F96D2FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.Rotas.Business", "src\Master.Rotas.Business\Master.Rotas.Business.csproj", "{41E48F54-6BB9-4C7F-84D7-FCD1DF596AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.Business", "src\Master.Rotas.Business\Master.Rotas.Business.csproj", "{41E48F54-6BB9-4C7F-84D7-FCD1DF596AA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.Rotas.Data", "src\Master.Rotas.Data\Master.Rotas.Data.csproj", "{4991BE9F-932F-47B9-87B1-4A2CCC0DC7F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.Data", "src\Master.Rotas.Data\Master.Rotas.Data.csproj", "{4991BE9F-932F-47B9-87B1-4A2CCC0DC7F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
