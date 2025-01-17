@@ -16,12 +16,12 @@ namespace Master.Rotas.API.Controllers
 
         public RotasController(IRotaRepository rotaRepository,
                                IRotaService rotaService,
-                               IMapper mapper)
+                               IMapper mapper,
+                               INotificador notificador) : base(notificador) 
         {
             _rotaRepository = rotaRepository;
             _rotaService = rotaService;
             _mapper = mapper;
-
         }
 
         [HttpGet]
@@ -45,43 +45,39 @@ namespace Master.Rotas.API.Controllers
         [HttpPost]
         public async Task<ActionResult<RotaViewModel>> Adicionar(RotaViewModel rotaViewModel)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
-            var rota = _mapper.Map<Rota>(rotaViewModel);
-            var result = await _rotaService.Adicionar(rota);
+            await _rotaService.Adicionar(_mapper.Map<Rota>(rotaViewModel));
 
-            if (!result) return BadRequest();
-
-            return Ok(rota);
+            return CustomResponse(rotaViewModel);
         }
 
         [HttpPut("{id:guid}")]
         public async Task<ActionResult<RotaViewModel>> Atualizar(Guid id, RotaViewModel rotaViewModel)
         {
-            if (id != rotaViewModel.Id) return BadRequest();
+            if (id != rotaViewModel.Id)
+            {
+                NotificarErro("O id informado não é o mesmo que foi passado na query");
+                return CustomResponse(rotaViewModel);
+            }
 
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
 
-            var rota = _mapper.Map<Rota>(rotaViewModel);
-            var result = await _rotaService.Atualizar(rota);
+            await _rotaService.Atualizar(_mapper.Map<Rota>(rotaViewModel));
 
-            if (!result) return BadRequest();
-
-            return Ok(rota);
+            return CustomResponse(rotaViewModel);
         }
 
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<RotaViewModel>> Excluir(Guid id)
         {
-            var rota = await _rotaRepository.ObterPorId(id);
+            var rotaViewModel = await _rotaRepository.ObterPorId(id);
 
-            if (rota == null) return NotFound();
+            if (rotaViewModel == null) return NotFound();
 
-            var result = await _rotaService.Remover(id);
+            await _rotaService.Remover(id);
 
-            if (!result) return BadRequest();
-
-            return Ok(rota);
+            return CustomResponse(rotaViewModel);
         }
     }
 }

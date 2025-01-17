@@ -1,4 +1,5 @@
 ﻿using Master.Rotas.Data.Context;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Master.Rotas.Configuration
@@ -11,6 +12,8 @@ namespace Master.Rotas.Configuration
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddControllers();
+
+            services.Configure<ApiBehaviorOptions>(options => { options.SuppressModelStateInvalidFilter = true; });
 
             services.AddCors(options =>
             {
