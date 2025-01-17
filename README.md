@@ -3,16 +3,13 @@
 ![Modelo da Arquitetura proposta](https://raw.githubusercontent.com/jeffreysSharp/master.rotas/refs/heads/main/_docs/img/fluxo-arquitetura.jpg)
 
 # Instalação
-- Clone o projeto: 
+- 1) Clone o projeto: 
 https://github.com/jeffreysSharp/master.rotas.git
   
-Abrir o Package Manager Console
-Selecione o Projeto Master.Rotas.Data
-Rode o comando Update-Database
-Selecione o Projeto Master.Rotas.API
-Rode o comando update-database -Context ApplicationDbContext
-Set Startup Project Master.Rotas.API
-F5
+- 2) Abrir o Package Manager Console > Selecione o Projeto Master.Rotas.Data > Rode o comando Update-Database
+- 3) Selecione o Projeto Master.Rotas.API > Rode o comando update-database -Context ApplicationDbContext
+- 4) Set Startup Project Master.Rotas.API
+- 5) F5
 
 
 # REST com ASP.NET Core WebAPI
