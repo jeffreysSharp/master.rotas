@@ -23,4 +23,8 @@
     <ProjectReference Include="..\Master.Rotas.Data\Master.Rotas.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
