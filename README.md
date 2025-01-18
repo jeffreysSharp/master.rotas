@@ -10,6 +10,7 @@ https://github.com/jeffreysSharp/master.rotas.git
 - 3) Selecione o Projeto Master.Rotas.API > Rode o comando update-database -Context ApplicationDbContext
 - 4) Set Startup Project Master.Rotas.API
 - 5) F5
+- 6) Para adicionar as Claims > Na Tabela AspNetUserClaims Inserir um UserId, ClaimType = Rota, ClaimValue = Adicionar, Atualizar, Excluir
 
 
 # REST com ASP.NET Core WebAPI
