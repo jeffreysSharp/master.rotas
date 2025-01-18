@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Master.Rotas.API.Extensions;
 using Master.Rotas.API.ViewModels;
 using Master.Rotas.Business.Intefaces;
 using Master.Rotas.Business.Interfaces;
@@ -26,7 +27,6 @@ namespace Master.Rotas.API.Controllers
             _mapper = mapper;
         }
 
-        [AllowAnonymous]
         [HttpGet]
         public async Task<IEnumerable<RotaViewModel>> ObterTodos()
         {
@@ -45,6 +45,7 @@ namespace Master.Rotas.API.Controllers
             return rota;
         }
 
+        [ClaimsAuthorize("Rota", "Adicionar")]
         [HttpPost]
         public async Task<ActionResult<RotaViewModel>> Adicionar(RotaViewModel rotaViewModel)
         {
@@ -54,6 +55,8 @@ namespace Master.Rotas.API.Controllers
 
             return CustomResponse(rotaViewModel);
         }
+
+        [ClaimsAuthorize("Rota", "Atualizar")]
 
         [HttpPut("{id:guid}")]
         public async Task<ActionResult<RotaViewModel>> Atualizar(Guid id, RotaViewModel rotaViewModel)
@@ -71,6 +74,7 @@ namespace Master.Rotas.API.Controllers
             return CustomResponse(rotaViewModel);
         }
 
+        [ClaimsAuthorize("Rota", "Excluir")]
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<RotaViewModel>> Excluir(Guid id)
         {
