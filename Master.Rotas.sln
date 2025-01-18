@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.Business", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Rotas.Data", "src\Master.Rotas.Data\Master.Rotas.Data.csproj", "{B4587299-E641-4DC2-8638-F15953BE0AF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.Rotas.Tests", "src\Master.Rotas.Tests\Master.Rotas.Tests.csproj", "{664D604D-F623-4BCD-9F1B-76FF9F1269C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B4587299-E641-4DC2-8638-F15953BE0AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4587299-E641-4DC2-8638-F15953BE0AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4587299-E641-4DC2-8638-F15953BE0AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664D604D-F623-4BCD-9F1B-76FF9F1269C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664D604D-F623-4BCD-9F1B-76FF9F1269C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664D604D-F623-4BCD-9F1B-76FF9F1269C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664D604D-F623-4BCD-9F1B-76FF9F1269C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
