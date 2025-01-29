@@ -11,7 +11,7 @@ namespace Master.Rotas.Configuration
                 c.SwaggerDoc("v1", new OpenApiInfo()
                 {
                     Title = "Master Rotas API",
-                    Description = "API do Sistema de Rotas do Banco Master",
+                    Description = "API do Sistema de Rotas",
                     Contact = new OpenApiContact() { Name = "Jeferson  Almeida", Email = "jefferson_qi3@hotmail.com" },
                     License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
                 });
